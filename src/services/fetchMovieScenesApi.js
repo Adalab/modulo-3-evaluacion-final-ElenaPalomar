@@ -6,17 +6,17 @@ const getApiData = () => (
     .then(data => {
 
       // Clean API data
-      const dataClean = data.map((movie,index) => (
+      const dataClean = data.map((scene,index) => (
 
          { 
           id: index,
-          poster: movie.poster,
-          movie: movie.movie,
-          fullLine: movie.full_line,
-          year: movie.year,
-          character: movie.character,
-          director: movie.director,
-          audio: movie.audio
+          poster: scene.poster,
+          movie: scene.movie,
+          fullLine: scene.full_line,
+          year: scene.year,
+          character: scene.character,
+          director: scene.director,
+          audio: scene.audio
         } 
 
       )); 
