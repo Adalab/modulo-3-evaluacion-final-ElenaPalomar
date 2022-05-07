@@ -18,7 +18,6 @@ function App() {
   const [filterYear, setFilterYear] = useState('all');
 
 
-
   // useEffect to get API data
   useEffect (() => {
     getApiData().then(dataClean => { 
@@ -35,6 +34,18 @@ function App() {
   // Handle function to collect the values of the select and update the state filterYear
   const handleFilterYear = (newYear) => {
     setFilterYear(newYear)
+  };
+
+
+  // Function to create the elements for the 'select' dynamically
+  const getYears = () => {
+    const sceneYears = scenes.map(scene => scene.year);
+
+    // The years cannot be repeated
+    const uniqueYearsObject = new Set(sceneYears);
+    const uniqueYears = [...uniqueYearsObject];
+
+    return uniqueYears;
   };
 
 
@@ -56,11 +67,13 @@ function App() {
 
       <main className="main">
 
-        {/* Pass the state 'filterMovie' to control the input with the props 'filterMovie', handler functions to collect the value of the text in the input with the props 'handleFilterMovie' and the value of the selectionated select with the props 'handleFilterYear' */}
+        {/* Pass the state 'filterMovie' to control the input with the props 'filterMovie', the state 'filterYear' to control the select with the props 'filterYear', handler functions to collect the value of the text in the input with the props 'handleFilterMovie' and the value of the selectionated select with the props 'handleFilterYear'. Also pass the 'uniqueYears' (getYears()) to render the 'select' with the props years */}
         <Filters 
           filterMovie={filterMovie}
+          filterYear={filterYear}
           handleFilterMovie={handleFilterMovie}
-          handleFilterYear={handleFilterYear} 
+          handleFilterYear={handleFilterYear}
+          years={getYears()}
         />
 
         {/* Pass const 'userfilters' to the MovieSceneList component with the props 'scenes' */}

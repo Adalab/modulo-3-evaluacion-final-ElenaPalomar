@@ -1,5 +1,11 @@
 const FilterYear = (props) => {
 
+  // Funtion to render 'select' options with the 'uniqueYears' value
+  const renderYears = () => 
+    props.years.map((year, index) => 
+      <option value={year} key={index}>{year}</option>
+    );
+
   // Execute the 'handleFilterYear' handler function via an 'onChange' event on the select
   const handleChangeSelect = (event) => {
     props.handleFilterYear(event.target.value);
@@ -12,16 +18,11 @@ const FilterYear = (props) => {
         className="filterYear__select" 
         name="year" 
         id="year" 
+        value={props.filterYear}
         onChange={handleChangeSelect}
       >
-        <option value="all">Selecciona un año</option>
-        <option value="2003">2003</option>
-        <option value="2007">2007</option>
-        <option value="2011">2011</option>
-        <option value="2013">2013</option>
-        <option value="2015">2015</option>
-        <option value="2017">2017</option>
-        <option value="2019">2019</option>
+        <option value="all" key='all'>Selecciona un año</option>
+        {renderYears()}
       </select>
     </>
   );
