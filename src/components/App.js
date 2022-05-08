@@ -10,6 +10,7 @@ import { Routes, Route } from 'react-router-dom';
 import { matchPath, useLocation } from 'react-router'
 
 import '../styles/App.scss';
+import Header from './Header';
 
 
 function App() {
@@ -94,11 +95,7 @@ function App() {
 
   return (
     <>
-      <header className='header'>
-        <h1 className='header__title'>Owen Wilson's 
-        <span className="uppercase">"wow"</span>
-        </h1>
-      </header>
+      <Header />
 
       <main className="main">
 

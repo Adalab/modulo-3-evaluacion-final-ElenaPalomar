@@ -1,11 +1,9 @@
-.scene__poster {
-  width: 100px;
-}
-
-.sceneDeatils__poster {
-  width: 300px;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
+@import "core/reset";
+@import "core/variables";
+@import "core/global";
+@import "layout/header";
+@import "layout/main";
+@import "layout/movieSceneList";
+@import "layout/movieSceneItem";
+@import "layout/movieSceneDetail";
+@import "core/finalGlobal";

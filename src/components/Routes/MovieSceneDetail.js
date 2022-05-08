@@ -1,3 +1,6 @@
+
+import '../../styles/layout/movieSceneDetail.scss';
+
 const MovieSceneDetail = (props) => {
   return (
     <section className="sceneDeatils">
