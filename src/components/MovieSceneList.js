@@ -14,7 +14,6 @@ const MovieSceneList = (props) => {
 
     <section className='scenes'>
       <ul className='scenes__list'>
-        {/* Esto es simplemente un validación para que si no hay niguna película que mostrar en pantalla, se muestre al menos un mensaje de aviso */}
         {renderMovieList.length === 0 ? <li className='scene__error'>No hay ninguna escena de película que coincida con tus datos de búsqueda 😔</li> : renderMovieList}
       </ul>
     </section>

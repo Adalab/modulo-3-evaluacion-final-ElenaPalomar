@@ -1,7 +1,5 @@
 const MovieSceneDetail = (props) => {
-  console.log(props);
   return (
-    // Esto es lo que quiero que me pinte la 'paína' (la ruta) del detalle de la escena
     <section className="sceneDeatils">
       <img src={props.scene.poster} className='sceneDeatils__poster' alt={props.scene.movie} />
       <h2 className='sceneDeatils__title'>{props.scene.movie}</h2>
