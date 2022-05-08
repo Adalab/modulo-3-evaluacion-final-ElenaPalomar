@@ -2,16 +2,19 @@ import FilterMovie from './FilterMovie';
 import FilterYear from './FilterYear';
 
 function Filters(props) {
+
+  const handleSubmit = event => event.preventDefault();
+
   return (
     <section className="filters">
-      <form className='filters__form'>
-        {/* Pass the state 'filterMovie' to control the input  with the props 'filterMovie' and handler function to collect the value of the text in the input with the props 'handleFilterMovie' */}
+      <form className='filters__form' onSubmit={handleSubmit}>
+        {/* Pass the state 'filterMovie' to control the input and handler function 'handleFilterMovie' to collect input:text value */}
         <FilterMovie
           filterMovie={props.filterMovie}
           handleFilterMovie={props.handleFilterMovie}
         />
 
-        {/* Pass the state 'filterYear' to control the select with the props 'filterYear' and the handler function to collect the value of the selectionated select with the props 'handleFilterYear'. Also pass the 'uniqueYears' (getYears()) to render the 'select' with the props years */}
+        {/* Pass the state 'filterYear' to control the select, handler function 'handleFilterYear' to collect selectionated select value, and const 'uniqueYears' (getYears()) to render the 'select' options */}
         <FilterYear
           filterYear={props.filterYear}
           handleFilterYear={props.handleFilterYear}
