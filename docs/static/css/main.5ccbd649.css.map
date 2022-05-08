@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.5ccbd649.css","mappings":"AAAA,eACE,WAAY,CACb,sBAGC,WAAY,CACb,WAGC,wBAAyB","sources":["styles/App.scss"],"sourcesContent":[".scene__poster {\r\n  width: 100px;\r\n}\r\n\r\n.sceneDeatils__poster {\r\n  width: 300px;\r\n}\r\n\r\n.uppercase {\r\n  text-transform: uppercase;\r\n}"],"names":[],"sourceRoot":""}
