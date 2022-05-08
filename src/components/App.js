@@ -28,11 +28,14 @@ function App() {
   // 'useEffect' to get API data
   useEffect (() => {
     if(scenes.length === 0) {
-      getApiData().then(dataClean => setScenes(dataClean))
-    } else {
-      ls.set('scenes', scenes);
+      getApiData().then(dataClean => setScenes(dataClean));
     }
   }, []);
+
+  // Set dataAPI in ls
+  useEffect(() => {
+    ls.set('scenes', scenes);
+  }, [scenes]);
 
 
   // Handle function to collect the values of the input:text and update the state filterMovie
