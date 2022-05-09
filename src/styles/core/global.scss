@@ -1,6 +1,30 @@
 body {  
-  background-color: $colorBackground;
+  background-image: url('../../images/Owen_WilsonLoki.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  @media all and (min-width: 1280px) {
+    background-position:unset;
+  }
 }
+
+body:before {
+  content: "";
+  background-image: radial-gradient(#1D0803, #924D00, #F6BA4A);
+  background-attachment: fixed;
+  opacity: 0.5;
+
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+}
+
 
 .capitalize {
   text-transform: capitalize;

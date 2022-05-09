@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import '../styles/layout/movieSceneItem.scss';
 
 const MovieSceneItem = (props) => {
 

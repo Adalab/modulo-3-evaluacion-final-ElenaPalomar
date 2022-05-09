@@ -18,7 +18,6 @@ function App() {
   // STATES
   // State for API data
   const [scenes, setScenes] = useState(ls.get('scenes', []));
-  console.log(scenes);
   // State for input value
   const [filterMovie, setFilterMovie] = useState('');
   // State for select value

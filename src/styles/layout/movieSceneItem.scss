@@ -1,9 +1,47 @@
+.scene__link {
+  background-color: #180500;
+  border-radius: 20px;
+
+  width: 200px;
+  height: 320px;
+
+  padding: 10px 20px;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  transition: all .2s;
+
+  @media all and (min-width: 480px) {
+    width: 250px;
+    height: 350px;
+  }
+}
+
+.scene__link:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
 
 
 .scene__poster {
-  width: 150px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 3px #F9D880;
 
-  margin: 0 auto;
+  width: 130px;
+
+  margin-bottom: 5px;
   text-align: center;
 
+  @media all and (min-width: 480px) {
+    width: 150px;
+  }
 }
+
+
+
