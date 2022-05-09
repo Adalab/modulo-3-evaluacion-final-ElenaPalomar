@@ -114,6 +114,8 @@ function App() {
           } />
 
           <Route path='/scene/:sceneId' element={
+            sceneFound === undefined ?
+            <p>La página a la que estas intentando acceder no existe</p> :
             <MovieSceneDetail scene={sceneFound}/>
           } />
 
