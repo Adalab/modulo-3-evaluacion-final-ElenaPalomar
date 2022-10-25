@@ -25,8 +25,8 @@ function App() {
 
 
   // 'useEffect' to get API data
-  useEffect (() => {
-    if(scenes.length === 0) {
+  useEffect(() => {
+    if (scenes.length === 0) {
       getApiData().then(dataClean => setScenes(dataClean));
     }
   }, []);
@@ -74,25 +74,25 @@ function App() {
 
   const userfilters = scenes.sort(orderScenes)
     // Function to filter API data by name of the movie
-    .filter(scene => scene.movie.toLowerCase().includes (filterMovie.toLowerCase()))
+    .filter(scene => scene.movie.toLowerCase().includes(filterMovie.toLowerCase()))
 
     // Function to filter API data by year, including the case which no year is selected
     .filter(scene => filterYear === 'all' ? true : scene.year === parseInt(filterYear));
 
 
 
-    // ROUTES
-    // Get pathoute (browser)
-    const { pathname } = useLocation();
+  // ROUTES
+  // Get pathoute (browser)
+  const { pathname } = useLocation();
 
-    // Compare the current route (pathname) with the dynamic route (/scene/:sceneId)
-    const dataPath = matchPath('/scene/:sceneId', pathname);
+  // Compare the current route (pathname) with the dynamic route (/scene/:sceneId)
+  const dataPath = matchPath('/scene/:sceneId', pathname);
 
-    // Save the variable when the page has already loaded the first data
-    const sceneId = dataPath !== null ? parseInt(dataPath.params.sceneId) : null;
+  // Save the variable when the page has already loaded the first data
+  const sceneId = dataPath !== null ? parseInt(dataPath.params.sceneId) : null;
 
-    // Finds the match of an element with an 'id' equal id's path
-    const sceneFound = scenes.find(scene => scene.id === sceneId);
+  // Finds the match of an element with an 'id' equal id's path
+  const sceneFound = scenes.find(scene => scene.id === sceneId);
 
 
   return (
@@ -105,21 +105,21 @@ function App() {
 
           <Route path='/' element={
             <>
-              <Filters 
+              <Filters
                 filterMovie={filterMovie}
                 filterYear={filterYear}
                 handleFilterMovie={handleFilterMovie}
                 handleFilterYear={handleFilterYear}
                 years={getYears().sort()}
               />
-              <MovieSceneList scenes={userfilters}/>
+              <MovieSceneList scenes={userfilters} />
             </>
           } />
 
           <Route path='/scene/:sceneId' element={
             sceneFound === undefined ?
-            <p>La página a la que estas intentando acceder no existe</p> :
-            <MovieSceneDetail scene={sceneFound}/>
+              <p className='error'>La página a la que estas intentando acceder no existe</p> :
+              <MovieSceneDetail scene={sceneFound} />
           } />
 
         </Routes>

@@ -1,0 +1,29 @@
+@import "../core/variables.scss";
+@import "../core/reset";
+@import "../core/global.scss";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error {
+  background-color: #f9d980a2;
+  border: 5px outset $colorBrown;
+  border-radius: 20px;
+
+  width: 80%;
+  max-width: 600px;
+
+  margin: 10vh auto 0;
+  padding: 10vh 5%;
+
+  color: $colorBrown;
+  text-shadow: 0 0 5px $colorGold;
+  font-family: $fontMovieTitle;
+  font-size: 26px;
+  letter-spacing: 2px;
+  text-align: center;
+}

@@ -11,9 +11,9 @@
     margin: 0 auto;
 
     color: $colorBrown;
+    text-shadow: 0 0 5px $colorGold;
     font-family: $fontMovieTitle;
     font-size: 22px;
-    text-shadow: 0 0 5px $colorGold;
 
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@
   .filterMovie__text {
     border: 6px inset $colorGold;
     width: 80%;
-    max-width: 600px;
+    max-width: 400px;
 
     padding: 5px 20px;
     

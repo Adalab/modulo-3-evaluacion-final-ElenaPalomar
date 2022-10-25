@@ -13,8 +13,8 @@ actor Owen Wilson ha dicho 'wow'. Estas escenas se pueden filtrar por nombre y a
 
 <h4 id="links">Links 📌</h4>
 
-- [Repositorio en GitHub](https://github.com/ElenaPalomar/cocktails-browser)
-- [Buscador de cócteles](https://elenapalomar.github.io/cocktails-browser/)
+- [Repositorio en GitHub](https://github.com/ElenaPalomar/owen-wilson-wow)
+- [Owen Wilson's"WOW"](https://elenapalomar.github.io/owen-wilson-wow/)
 
 ## :bookmark_tabs: Índice
 
@@ -22,9 +22,9 @@ actor Owen Wilson ha dicho 'wow'. Estas escenas se pueden filtrar por nombre y a
   - [Links](#links)
 - [Descripción](#descripcion)
   - [Inicio](#inicio)
-  - [Buscar](#buscar)
-  - [Agregar/quitar de favoritos](#favoritos)
-  - [Listado de favoritos](#lista-favoritos)
+  - [Filtrar por película](#filtro-película)
+  - [Filtrar por año](#filtro-año)
+  - [Detalle de las escenas](#detalle)
   - [Almacenamiento Local](#almacenamiento-local)
   - [Errores](#errores)
 - [Requisitos para poder trabajar con el proyecto](#requisitos)
