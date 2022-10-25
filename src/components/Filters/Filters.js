@@ -1,6 +1,8 @@
 import FilterMovie from './FilterMovie';
 import FilterYear from './FilterYear';
 
+import "../../styles/layout/filters.scss"
+
 function Filters(props) {
 
   const handleSubmit = event => event.preventDefault();

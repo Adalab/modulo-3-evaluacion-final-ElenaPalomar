@@ -1,5 +1,5 @@
 .scenes__list {
-  margin: 20px;
+  margin: 20px auto;
 
   display: grid;
   grid-template-columns: 1fr;
@@ -7,7 +7,12 @@
   align-items: center;
 
   @media all and (min-width: 480px) {
-    grid-template-columns: auto;
+    max-width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
   }
 
 }
@@ -17,15 +22,15 @@
   border-radius: 20px;
 
   width: 200px;
-  height: 320px;
+  height: 340px;
 
   margin: 20px 30px;
 
   transition: all .3s;
 
   @media all and (min-width: 480px) {
-    width: 250px;
-    height: 350px;
+    width: 280px;
+    height: 400px;
   }
 }
 

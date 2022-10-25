@@ -3,9 +3,9 @@
   border-radius: 20px;
 
   width: 200px;
-  height: 320px;
+  height: 340px;
 
-  padding: 10px 20px;
+  padding: 0 20px;
 
   text-align: center;
 
@@ -18,8 +18,8 @@
   transition: all .2s;
 
   @media all and (min-width: 480px) {
-    width: 250px;
-    height: 350px;
+    width: 280px;
+    height: 400px;
   }
 }
 
@@ -41,6 +41,38 @@
   @media all and (min-width: 480px) {
     width: 150px;
   }
+}
+
+
+.scene__title {
+  margin-top: 7px;
+  font-family: $fontMovieTitle;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+
+  @media all and (min-width: 480px) {
+    font-size: 25px;
+  }
+}
+
+
+.scene__fullLine {
+  margin-top: 4px;
+  font-family: $fontFullLine;
+  font-size: 18px;
+  line-height: 18px;
+
+  @media all and (min-width: 480px) {
+    font-size: 22px;
+  }
+}
+
+
+.scene__year {
+  margin-top: 4px;
+  font-family: $fontYear;
+  font-size: 20px;
+  letter-spacing: 1.5px;
 }
 
 
