@@ -18,7 +18,6 @@ function App() {
   // STATES
   // State for API data
   const [scenes, setScenes] = useState(ls.get('scenes', []));
-  console.log(scenes);
   // State for input value
   const [filterMovie, setFilterMovie] = useState('');
   // State for select value
@@ -118,6 +117,8 @@ function App() {
           } />
 
           <Route path='/scene/:sceneId' element={
+            sceneFound === undefined ?
+            <p>La página a la que estas intentando acceder no existe</p> :
             <MovieSceneDetail scene={sceneFound}/>
           } />
 

@@ -1,0 +1,70 @@
+@import "../core/variables.scss";
+@import "../core/reset";
+@import "../core/global.scss";
+
+.filters {
+  width: 80%;
+  margin: 0 auto;
+
+
+  &__form {
+    margin: 0 auto;
+
+    color: $colorBrown;
+    font-family: $fontMovieTitle;
+    font-size: 22px;
+    text-shadow: 0 0 5px $colorGold;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    @media all and (min-width: 480px) {
+      font-size: 26px;
+    }
+  }
+
+
+  .filterMovie__text {
+    border: 6px inset $colorGold;
+    width: 80%;
+    max-width: 600px;
+
+    padding: 5px 20px;
+    
+    font-family: $fontFullLine;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+
+  }
+
+
+  .filterYear__title {
+    margin-top: 10px;
+  }
+
+
+  .filterYear__select {
+    background: transparent;
+    border: 4px outset $colorGold;
+    border-radius: 10px;
+
+    width: 80%;
+    max-width: 300px;
+
+    padding: 5px 20px;
+
+    font-family: $fontYear;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 2px;
+
+    @media all and (min-width: 480px) {
+      font-size: 20px;
+    }
+  }
+}
+

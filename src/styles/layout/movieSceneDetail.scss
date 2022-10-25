@@ -1,9 +1,75 @@
+@import "../core/variables.scss";
+@import "../core/reset";
+@import "../core/global.scss";
+
 .sceneDeatils {
+  background-color: $colorBrown;
+  border: $colorGold 4px outset;
+  border-radius: 20px;
+
+  width: 80%;
+  max-width: 400px;
+
+  margin: 0 auto;
+  padding: 30px 20px;
+  transform: translateY(5vh);
+
+  color: $colorWhite;
+  text-align: center;
+
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-}
+  gap: 10px;
 
-.sceneDeatils__poster {
-  width: 250px;
+  @media all and (min-width: 480px) {
+    
+  }
+
+
+  &__poster {
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 3px #F9D880;
+
+    width: 90%;
+
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+
+  &__title {
+    margin-top: 20px;
+    font-family: $fontMovieTitle;
+    font-size: 22px;
+    letter-spacing: 2px;
+
+    @media all and (min-width: 480px) {
+      font-size: 25px;
+    }
+  }
+
+
+  &__fullLine {
+    font-family: $fontFullLine;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 1px;
+
+    @media all and (min-width: 480px) {
+      font-size: 22px;
+    }
+  }
+
+
+  &__audio {
+    margin-top: 5px;
+    font-family: $fontAudio;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    line-height: 20px;
+  }
+
 }

@@ -1,5 +1,4 @@
 import MovieSceneItem from './MovieSceneItem';
-import '../styles/layout/movieSceneList.scss';
 
 const MovieSceneList = (props) => {
 
