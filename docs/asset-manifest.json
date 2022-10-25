@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "./static/css/main.16c36672.css",
-    "main.js": "./static/js/main.fb114ad5.js",
+    "main.js": "./static/js/main.0141ee73.js",
     "static/media/Owen_WilsonLoki.jpg": "./static/media/Owen_WilsonLoki.f27cb3c14831e2585c5a.jpg",
     "index.html": "./index.html",
     "main.16c36672.css.map": "./static/css/main.16c36672.css.map",
-    "main.fb114ad5.js.map": "./static/js/main.fb114ad5.js.map"
+    "main.0141ee73.js.map": "./static/js/main.0141ee73.js.map"
   },
   "entrypoints": [
     "static/css/main.16c36672.css",
-    "static/js/main.fb114ad5.js"
+    "static/js/main.0141ee73.js"
   ]
 }
