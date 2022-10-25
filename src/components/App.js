@@ -60,10 +60,16 @@ function App() {
     }
   };
 
+  // FILTER BY NAME
+  const userfiltersMovies = scenes.sort(orderScenes)
+    // Function to filter API data by name of the movie
+    .filter(scene => scene.movie.toLowerCase().includes(filterMovie.toLowerCase()))
 
+
+  // FILTER BY YEAR
   // Function to create the elements for the 'select' dynamically
   const getYears = () => {
-    const sceneYears = scenes.map(scene => scene.year);
+    const sceneYears = userfiltersMovies.map(scene => scene.year);
 
     // The years cannot be repeated
     const uniqueYearsObject = new Set(sceneYears);
@@ -72,10 +78,7 @@ function App() {
     return uniqueYears;
   };
 
-  const userfilters = scenes.sort(orderScenes)
-    // Function to filter API data by name of the movie
-    .filter(scene => scene.movie.toLowerCase().includes(filterMovie.toLowerCase()))
-
+  const userfilters = userfiltersMovies.sort(orderScenes)
     // Function to filter API data by year, including the case which no year is selected
     .filter(scene => filterYear === 'all' ? true : scene.year === parseInt(filterYear));
 

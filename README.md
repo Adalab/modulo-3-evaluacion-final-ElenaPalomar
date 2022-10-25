@@ -36,18 +36,19 @@ actor Owen Wilson ha dicho 'wow'. Estas escenas se pueden filtrar por nombre y a
 
 <h3 id="inicio">Inicio 🎬</h3>
 
-<p align="justify">En un primer momento, la página muestra un listado aleatorio de cócteles y un buscador.</p>
-<p align="justify">Desde este momento ya se puede realizar una búsqueda del cóctel por el que sientas curiosidad, añadir o quitar cualquiera de los cócteles que se muestran a favoritos y echar un vistazo a los que ya tenía guardados haciendo click en la pestaña que se identifica con un corazón (favoritos).</p>
+<p align="justify">En un primer momento, la página muestra un listado de 50 escenas donde el actor Owen Wilson ha
+dicho 'wow'.</p>
+<p align="justify">Para ello, se hace una consulta al API <a href="https://owen-wilson-wow-api.herokuapp.com/" target="_blank">The Owen Wilson WoW API</a> que nos devuelve información de 50 escenas de películas aleatorias.</p>
 
-<h3 id="buscar">Buscar 🔍</h3>
+<h3 id="filtro-película">Filtrar por película 🔍</h3>
 
-<p align="justify">Al hacer clic sobre el botón de Buscar, la aplicación se conecta al API <a href="https://www.thecocktaildb.com" target="_blank">TheCocktailDB</a> y devuelve un listado de los cócteles que contienen la palabra que el usurio haya escrito en el cuadro de texto.</p>
+<p align="justify">Una vez tenemos el listado de escenas, hay un filtro para buscar la escena por coincidencia del nombre que el usuario escriba en el cuadro de texto con alguna palabra que contenga título de la película.</p>
 
-<h3 id="favoritos">Agregar/quitar de favoritos ❤ / 💔</h3>
+<h3 id="filtro-año">Filtrar por año 📅</h3>
 
-<p align="justify">Cada uno de los cócteles que se renderizan tiene un corazón en la esquina superior derecha, en el cual puedes hacer click y señalar que ese cóctel es tu favorito o que ha dejado de serlo. Cuando pulsas el corazón ocurren dos cosas: el cóctel se cambia su apariencia visual y se añade a la lista de favoritos.</p>
+<p align="justify">Además del cuadro de búsqueda, hay un desplegable con los años por los que se puede filtrar el listado de escenas. Los años que contiene el mismo son los coincidentes con los de las escenas, es decir, si al filtrar por nombre sólo se muestra una escena, también habrá un único año en el desplegable.</p>
 
-<h3 id="lista-favoritos">Listado de favoritos 💟</h3>
+<h3 id="detalle">Detalle de las escenas 🎞</h3>
 
 <p align="justify">Hasta ahora hemos estado viendo la página principal en la que se ven los cócteles por defecto o los que hemos buscado, pero, si nos desplazamos a la pestaña de favoritos tendremos un listados de cócteles que hemos seleccionado nosotros. Cada uno de éstos tiene un botón para eliminarlo de la lista de favoritos y, al final de la misma, un botón para eliminarlos todos a la vez.</p>
 
@@ -97,8 +98,7 @@ actor Owen Wilson ha dicho 'wow'. Estas escenas se pueden filtrar por nombre y a
 - Flexbox
 - Diseño _responsive_
 - Flujo de trabajo _Mobile-first_
-- JavaScript <img src="./src/images/README/JS.png" width=4%/>
-- Gulp <img src="./src/images/README/gulp.png" width=2%/>
+- React <img src="./src/images/README/react.png" width=4%/>
 
 <h2 id="autora">✒️ Autora</h2>
 
